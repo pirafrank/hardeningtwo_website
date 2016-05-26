@@ -14,6 +14,13 @@
   z-index: 1999;
 }
 
+.profile-pic {
+  width: 260px;
+  height: auto;
+  max-height: 260px;
+  max-width: 260px;
+}
+
 /* Sections
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .section {
@@ -42,6 +49,26 @@
 .service-description {
   opacity: .8;
   font-weight: 400;
+}
+.service-link {
+  opacity: .8;
+  font-weight: 400;
+}
+.service-link a {
+  opacity: .8;
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+}
+.service-link a:focus {
+  opacity: .8;
+  font-weight: 400;
+  color: #e15b00;
+}
+.service-link a:hover {
+  opacity: .8;
+  font-weight: 400;
+  color: #e15b00;
 }
 .service-icon {
   font-size: 4.5rem;
