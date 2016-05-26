@@ -1,0 +1,91 @@
+.preventivo-form {
+  padding-top: 25px;
+  padding-bottom: 30px;
+}
+
+.preventivo-form form .form-group {
+  margin-bottom: 20px;
+}
+
+.preventivo-form input[type="text"] { width: 95%; height: 34px; }
+.preventivo-form textarea { width: 95%; height: 170px; padding-top: 6px; padding-bottom: 6px; }
+.preventivo-form label { font-size: 1.8rem; font-weight: 400; }
+.preventivo-form label .error-label { font-style: italic }
+.preventivo-form button { margin-top: 5px; padding: 0 45px; }
+
+input[type="text"], 
+textarea {
+  margin: 0;
+  padding: 0 6px;
+  vertical-align: middle;
+  background: none;
+  border: 1px solid #bbb;
+  font-size: 20px;
+  font-weight: 400;
+  color: #000;
+  -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+  -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+  -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+input[type="text"]:focus, 
+textarea:focus {
+  outline: 0;
+  border: 2px solid #ccc;
+  -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+
+input[type="text"]:-moz-placeholder, textarea:-moz-placeholder { color: #ccc; }
+input[type="text"]:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #ccc; }
+input[type="text"]::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #ccc; }
+
+
+button.btn {
+  height: 35px;
+  margin: 0;
+  padding: 10 20px;
+  vertical-align: middle;
+  background: #222;
+  border: 0;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 30px;
+  color: #fff;
+  text-shadow: none;
+  -moz-border-radius: 0; -webkit-border-radius: 0; border-radius: 0;
+  -moz-box-shadow: 0 1px 25px 0 rgba(0,0,0,.05) inset, 0 -1px 25px 0 rgba(0,0,0,.05) inset;
+  -webkit-box-shadow: 0 1px 25px 0 rgba(0,0,0,.05) inset, 0 -1px 25px 0 rgba(0,0,0,.05) inset;
+  box-shadow: 0 1px 25px 0 rgba(0,0,0,.05) inset, 0 -1px 25px 0 rgba(0,0,0,.05) inset;
+  -o-transition: all .3s; -moz-transition: all .3s; -webkit-transition: all .3s; -ms-transition: all .3s; transition: all .3s;
+}
+
+button.btn:hover {
+  background: #333;
+  border: 1px;
+  color: #fff;
+  -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none;
+}
+
+button.btn:active {
+  outline: 0;
+  background: #5d5d5d;
+  border: 0;
+  color: #fff;
+  -moz-box-shadow: 0 5px 10px 0 rgba(0,0,0,.15) inset, 0 -1px 25px 0 rgba(0,0,0,.05) inset;
+  -webkit-box-shadow: 0 5px 10px 0 rgba(0,0,0,.15) inset, 0 -1px 25px 0 rgba(0,0,0,.05) inset;
+  box-shadow: 0 5px 10px 0 rgba(0,0,0,.15) inset, 0 -1px 25px 0 rgba(0,0,0,.05) inset;
+}
+
+button.btn:focus {
+  outline: 0;
+  background: #5d5d5d;
+  border: 0;
+  color: #fff;
+}
+
+.btn:active:focus, .btn.active:focus {
+  outline: 0;
+  background: #5d5d5d;
+  border: 0;
+  color: #fff;
+}

@@ -1,0 +1,400 @@
+/* Shared
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.button {
+  border-radius: 10px;
+}
+
+.no-script {
+  position: fixed;
+  background-color: #ffc300;
+  top: 10%;
+  left: 25%;
+  padding: 5px 20px 5px 20px;
+  text-align: center;
+  z-index: 1999;
+}
+
+/* Sections
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.section {
+  padding: 8rem 0 7rem;
+  text-align: center;
+}
+.section-heading,
+.section-description {
+  margin-bottom: 1.2rem;
+}
+.section-item-heading {
+  margin-bottom: .3rem;
+  font-size: 2.5rem; /* making heading text of feature bigger */
+}
+.section-item-description {
+  opacity: .8;
+  font-weight: 400;
+}
+.section-item-icon {
+  font-size: 4.5rem;
+}
+.service-title {
+  margin-bottom: .3rem;
+  font-size: 2.5rem; /* making heading text of feature bigger */
+}
+.service-description {
+  opacity: .8;
+  font-weight: 400;
+}
+.service-icon {
+  font-size: 4.5rem;
+}
+
+/* Hero
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.phone {
+  position: relative;
+  max-width: 80%;
+  margin: 3rem auto -12rem;
+}
+.hero-heading {
+  color: #000; /* white text on header image */
+}
+
+/* Sections (ex Values)
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.top-text {
+	font-family: Oswald, sans-serif;
+  color: white;
+}
+
+.top-subtext {
+  font-family: Lato, Helvetica, sans-serif;
+  color: white;
+  font-size: 1.2em;
+}
+
+.top {
+  background-image: url("../assets/images/handshake.jpg");
+  background-repeat: no-repeat;
+  background-position: absolute;
+  background-size: cover;
+  width: 100%;
+}
+.section-one {
+  color: #222;
+  padding-bottom: 5rem;
+}
+.section-title {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.section-subtitle {
+  opacity: .8;
+  font-weight: 600;
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+.section-one-heading,
+.section-one-description {
+  margin-top: 1rem; /* by Ciccio */
+  margin-bottom: 5rem;
+}
+.section-two {
+  background-color: white;
+  color: #222;
+  padding-bottom: 5rem;
+}
+.section-two-multiplier { /* may be used in future */
+  margin-bottom: .5rem;
+  color: #11DFC7;
+}
+.for-you {
+  /* background-image: url('../assets/images/work2.jpg'); */
+  background-size: cover;
+  color: #222;
+  padding-bottom: 5rem;
+}
+.for-you-pic {
+  height: 64px;
+}
+.get-help {
+  background-image: url('../assets/images/stag.jpg');
+  background-size: cover;
+  color: white;
+}
+.team-pic {
+  height: 200px;
+}
+.sign-up {
+  /* background-image: url('../assets/images/laptop2.jpg');
+  background-size: cover; */
+  background-color: #eee;
+  color: #222;
+  padding-bottom: 5rem;
+}
+.form-one input {
+  background: rgba(255, 255, 255, 0.2);
+  border: solid 2px #fff;
+}
+.form-one input:hover, input:focus {
+  border: solid 2px #1497FC;
+}
+.partner {
+  height: 140px;
+}
+.social-icons-container {
+  text-align: center;
+}
+.social-icons-container ul {
+  display: inline;
+}
+.social-icons-container ul li {
+  display: inline;
+  list-style: none;
+}
+/*
+.social-icon {
+  height: 32px;
+  font-size: 2rem; 
+}
+*/
+.section-contacts .container{
+  background-color: #fff;
+  max-width: 50rem;
+}
+
+/* Help
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.get-help {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Categories
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.categories {
+  background-image: url('../assets/images/image2.jpg');
+  background-size: cover;
+  color: #fff;
+}
+.categories .section-description {
+  margin-bottom: 4rem;
+}
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.wrapper-footer {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  background-color: white;
+}
+
+.footer-links ul {
+  padding: 0; /* remove ul white space on mobile devices */
+}
+
+.footer-links li {
+  list-style: none;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #666;
+}
+.footer-links a:hover, .footer-links a:focus {
+  text-decoration: underline;
+  color: #666;
+}
+
+.footer-links p {
+  color: #666;
+}
+
+/* Device specific CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media (min-width: 240px) {
+  .footer-links {
+    margin-bottom: 2rem;
+    line-height: 1.4;
+    color: #666;
+    padding-left: 0;
+    font-size: 16px;
+  }
+  .footer-links, .footer-links a {
+    line-height: 2rem;
+  }
+  .footer-links li {
+    text-align: center;
+  }
+  .hero {
+    padding-top: 15rem;
+  }
+}
+
+/* Bigger than 550 */
+@media (min-width: 550px) {
+  .section {
+    padding: 12rem 0 11rem;
+    height: auto !important ;
+    min-height: 100%;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero {
+    padding-bottom: 12rem;
+    text-align: left;
+    height: 165px;
+  }
+  .phone {
+    position: absolute;
+    top: -7rem;
+    right: 3rem;
+    max-height: 362px;
+    z-index: 3;
+  }
+  .phone + .phone {
+    top: -6rem;
+    display: block;
+    max-width: 73.8%;
+    right: 0;
+    z-index: 2;
+    max-height: 338px;
+  }
+  .hero-heading {
+    font-size: 2.4rem;
+    width: 14em;
+  }
+  .footer-links {
+    font-size: 14px;
+  }
+}
+
+/* fix for hero-heading text overflow */
+@media (min-width: 551px) and (max-width: 749px) {
+  .hero-heading {
+    max-width: 22rem;
+  }
+}
+
+/* Bigger than 750 */
+@media (min-width: 750px) {
+  .hero {
+    height: 190px;
+  }
+  .hero-heading {
+    text-align: left;
+    font-size: 2.6rem;
+  }
+  .section {
+    padding: 14rem 0 15rem;
+  }
+  .hero {
+    padding: 16rem 0 14rem;
+  }
+  .section-description {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .phone {
+    top: -14rem;
+    right: 5rem;
+    max-height: 510px;
+  }
+  .phone + .phone {
+    top: -12rem;
+    max-height: 472px;
+  }
+  .categories {
+    padding: 15rem 0 8rem;
+  }
+  .footer-links {
+    padding-left: 30px;
+    font-size: 14px;
+    text-align: left;
+  }
+}
+
+/* Bigger than 1000 */
+@media (min-width: 1000px) {
+  .section {
+    padding: 14rem 0 16rem;
+  }
+  .hero {
+    padding: 28rem 0;
+  }
+  .hero-heading {
+    font-size: 3.0rem;
+  }
+  .phone {
+    top: -16rem;
+    max-height: 615px;
+  }
+  .phone + .phone {
+    top: -14rem;
+    max-height: 570px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .section {
+    padding: 16rem 0 20rem;
+  }
+  .hero {
+    padding: 44rem 0;
+  }
+
+/* Back to the top
+---------------------------------- */
+.to-top {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  position: fixed;
+  bottom: 40px;
+  right: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  /* image replacement properties */
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+  background: rgba(192, 192, 192, 0.8) url(../assets/images/to-top-arrow.svg) no-repeat center 50%;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+  -moz-transition: opacity .3s 0s, visibility 0s .3s;
+  transition: opacity .3s 0s, visibility 0s .3s;
+}
+.to-top.to-is-visible, .to-top.to-fade-out {
+  -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+  -moz-transition: opacity .3s 0s, visibility 0s 0s;
+  transition: opacity .3s 0s, visibility 0s 0s;
+}
+.to-top.to-is-visible {
+  /* the button becomes visible */
+  visibility: visible;
+  opacity: 1;
+}
+.to-top.to-fade-out {
+  /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+  opacity: .7;
+}
+.to-top:hover{
+  opacity: 1;
+  border: 1px solid #C0C0C0;
+}
+@media only screen and (min-width: 768px) {
+  .to-top {
+    right: 20px;
+    bottom: 20px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .to-top {
+    height: 60px;
+    width: 60px;
+    right: 30px;
+    bottom: 30px;
+  }
+}
