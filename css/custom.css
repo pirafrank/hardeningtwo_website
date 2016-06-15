@@ -136,8 +136,6 @@
   color: #11DFC7;
 }
 .for-you {
-  /* background-image: url('../assets/images/work2.jpg');
-  background-size: cover; */
   background-color: #eee;
   color: #222;
   padding-bottom: 5rem;
@@ -157,11 +155,19 @@
   height: 200px;
 }
 .sign-up {
-  /* background-image: url('../assets/images/laptop2.jpg');
-  background-size: cover; */
-  /* background-color: #eee; */
+  background-color: white;
   color: #222;
   padding-bottom: 5rem;
+}
+.event-picture {
+  background-image: url('../assets/images/room-bg.jpg');
+  height: 400px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
 }
 .form-one input {
   background: rgba(255, 255, 255, 0.2);
@@ -321,7 +327,7 @@
     padding: 14rem 0 15rem;
   }
   .hero {
-    padding: 16rem 0 14rem;
+    padding: 14rem 0 14rem;
   }
   .section-description {
     max-width: 60%;
@@ -353,7 +359,7 @@
     padding: 14rem 0 16rem;
   }
   .hero {
-    padding: 28rem 0;
+    padding: 20rem 0;
   }
   .hero-heading {
     font-size: 3.0rem;
@@ -373,7 +379,7 @@
     padding: 16rem 0 20rem;
   }
   .hero {
-    padding: 44rem 0;
+    padding: 36rem 0;
   }
 
 /* Back to the top
