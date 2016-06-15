@@ -28,8 +28,8 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/skeleton.css">
     <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/modal.css">
     <link rel="stylesheet" href="css/skeleton-navbar.css">
-    <link rel="stylesheet" href="css/preventivo-form.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- Favicon
@@ -40,7 +40,7 @@
     <script type="text/javascript" src="js/jquery-1.11.3.min.js" defer></script>
     <script type="text/javascript" src="js/velocity.min.js" defer></script>
     <script type="text/javascript" src="js/custom.js" defer></script>
-    <script type="text/javascript" src="js/preventivo.js" defer></script>
+    <script type="text/javascript" src="js/modal.js" defer></script>
 
   </head>
   <body>
@@ -67,9 +67,10 @@
         <div class="navbar-elements" id="navbarlist">
           <ul class="navbar-list">
             <li class="navbar-item"><a class="navbar-link" href="#why">Why Hardening?</a></li>
-            <li class="navbar-item"><a class="navbar-link" href="#stag">STAG</a></li>
+            <!-- <li class="navbar-item"><a class="navbar-link" href="#stag">STAG</a></li> -->
             <li class="navbar-item"><a class="navbar-link" href="#outline">Outline</a></li>
             <li class="navbar-item"><a class="navbar-link" href="#speakers">Speakers</a></li>
+            <li class="navbar-item"><a class="navbar-link" href="#get-content">Downloads</a></li>
             <li class="navbar-item"><a class="navbar-link" href="#contacts">Get in touch</a></li>
           </ul>
         </div>
@@ -88,7 +89,7 @@
             <p class="top-subtext">June 13, 2016 @ 11.00 am
             <br>Department of Mathematics and IT, University of Catania</p>
             <a class="button button-primary" href="#why">Know more</a>
-            <a class="button button-primary" href="https://www.facebook.com/events/1710173445891257/">Join on FB</a>
+            <a class="button button-primary" href="#relive-it">Relive it!</a>
           </div>
         </div>
       </div>
@@ -124,21 +125,22 @@
     <div class="section section-one" id="outline">
       <div class="container">
         <h3 class="section-title"><b>Event outline</b></h3>
+        <!--
         <div class="section-subtitle">
-          (*) Preliminary. Subject to change.
         </div>
+        -->
         <p class="service-description">
           <ul style="text-align:center; list-style-type: none;">
             <li>Intro</li>
             <li>Why hardening</li>
             <li>Live Demo: Hardening against pentesting (part 1, web server)</li>
-            <li>Live Demo: Hardening against pentesting (part 2, shellshock)</il>
-            <li>Live Demo: Hardening against pentesting (part 3, backdoors)</il>
+            <li>Live Demo: Hardening against pentesting (part 2, shellshock)</li>
+            <li>Live Demo: Hardening against pentesting (part 3, backdoors)</li>
             <li>Understanding RBAC and MAC</li>
             <li>Understanding hardening tools (SELinux, GrSecurity, Tomoyo, App Armor)</li>
             <li>Linux 4.6 and memory protections</li>
-            <li>Related topics</li>
             <li>Question time</il>
+            <li>Closing</li>
           </ul>
         </p>
       </div>
@@ -182,6 +184,42 @@
       </div>
     </div>
 
+    <!-- relive-it -->
+    <div class="section sign-up" id="relive-it">
+      <div class="container">
+        <br><br>
+        <h3 class="section-title"><b>Thank you!</b></h3>
+        <p class="section-subtitle">
+          You were awesome, thank you for beign part of that day. It was truly fun!
+          <br>To help you relive that day, here are some pictures of us all.
+        </p>
+
+        <div class="row">
+          pictures here!!!
+        </div>
+
+        <br><br>
+        <div class="row">
+          <p class="section-subtitle">You may also want to <a href="#get-content">get the content we used.</a></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- get content -->
+    <div class="section for-you" id="get-content">
+      <div class="container">
+        <br><br>
+        <h3 class="section-title"><b>Get content</b></h3>
+        <p class="section-subtitle">Test it at home! Download the slides and the code we used.</p>
+        <br>
+        <div class="row" style="text-align: center;">
+            <button class="button button-primary" id="open-modal-1">Get the code</button>
+            <button class="button button-primary" id="open-modal-2">Get the slides</button>
+        </div>
+        <br><br>
+      </div>
+    </div>
+
     <!-- contacts -->
     <div class="section sign-up" id="contacts">
       <div class="container">
@@ -218,6 +256,37 @@
       </div>
       </div>
     </footer>
+
+    <div id="disclaimer" class="modal">
+      <div class="modal-content">
+        <span class="close">x</span>
+        <h3 class="">Disclaimer</h3>
+        <p class="section-subtitle">By downloading this software you acknowledge it contains security holes and/or backdoors and that it is meant just for educational purpose.</p>
+        <a href="content/code.zip" class="button button-primary">I understand</a>
+      </div>
+    </div>
+
+    <div id="get-slides" class="modal">
+      <div class="modal-content">
+        <span class="close">x</span>
+        <br>
+        <p class="section-subtitle">Get slides for the four tools we demoed.</p>
+          <a href="content/why-hardening.pdf">Why Hardening</a>
+          <br>
+          <a href="http://www.slideshare.net/pirafrank/an-introduction-to-mac-rbac-and-lsm">An introduction to MAC, RBAC and LSM</a>
+          <br>
+          <a href="content/understanding_hardening_tools_selinux.pdf">SELinux</a>
+          <br>
+          <a href="http://www.slideshare.net/pirafrank/getting-started-with-grsecurity">GrSecurity</a>
+          <br>
+          <a href="content/understanding_hardening_tools_tomoyo.pdf">Tomoyo</a>
+          <br>
+          <a href="http://www.slideshare.net/pirafrank/getting-started-with-apparmor">AppArmor</a>
+          <br>
+          <a href="http://www.slideshare.net/pirafrank/linux-46-and-memory-protections">Linux 4.6 and memory protections</a>
+          <br><br>
+      </div>
+    </div>
 
     <!-- End Document
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
