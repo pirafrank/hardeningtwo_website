@@ -161,13 +161,43 @@
 }
 .event-picture {
   background-image: url('../assets/images/room-bg.jpg');
-  height: 400px;
+  height: 180px;
   background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   color: white;
+}
+/*@media only screen and (min-width: 480px) {
+  .event-picture {
+    height: 350px;
+  }
+}*/
+@media (min-width: 550px) {
+  .event-picture {
+    height: 250px;
+  }
+}
+@media (min-width: 750px) {
+  .event-picture {
+    height: 300px;
+  }
+}
+@media (min-width: 1000px) {
+  .event-picture {
+    height: 400px;
+  }
+}
+@media (min-width: 1200px) {
+  .event-picture {
+    height: 500px;
+  }
+}
+@media (min-width: 1400px) {
+  .event-picture {
+    height: 700px;
+  }
 }
 .form-one input {
   background: rgba(255, 255, 255, 0.2);
